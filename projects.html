@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+		<title>rue</title>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<h1 class="title"><img id="sprout" src="images/logo.png">rue</h1>
+		<div class="table">
+			<ul class="my-navbar">
+				<li><a href="projects.html">projects</a></li>
+				<li> . </li>
+				<li><a href="interests.html">interests</a></li>
+				<li> . </li>
+				<li><a href="about.html">about</a></li>
+			</ul>
+		</div>
+		<!-- Main -->
+		<div class="container-for-projects row">
+			<a href=#edx>
+				<div class="image-link">
+					<div id="edBtn" class="overlay">
+						<span id="edx">edx</span>
+					</div>
+					<img class="image-inside" src="images/map.png" />
+				</div>
+			</a>
+			<a href=#dfa>
+				<div class="image-link">
+					<img class="image-inside" src="images/brain.png" />
+					<span id="dfa">dfa</span>
+					<div id="dfaBtn" class="overlay2">
+						<span id="dfa2">dfa</span>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="container-for-projects row">
+			<a href=#1room>
+				<div class="image-link">
+					<img class="image-inside" src="images/africa.png" />
+					<span id="room">1room</span>
+					<div id="roomBtn" class="overlay2">
+						<span id="room2">1room</span>
+					</div>
+				</div>
+			</a>
+			<a href=#hm>
+				<div class="image-link">
+					<img class="image-inside" src="images/hack.png" />
+					<span id="hm">hackmed</span>
+					<div id="medBtn" class="overlay2">
+						<span id="hm2">hackmed</span>
+					</div>
+				</div>
+			</a>
+		</div>
+		<!-- The Modals -->
+		<div id="dfaModal" class="modal">
+		  	<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="info">
+					<img class="logo" src="images/dfa.png" />
+					 is an MIT organization that aims to empower students to make a difference now with their current skillsets and learn others along the way. DFA teams consists of a range of student backgrounds, and each team partners with professional organizations to <span class="bold">address existing gaps within the community</span>.
+				</div>
+				<div class="info-text">
+				<p><span class="bold">as project lead</span>, I led our team of five from <span class="bold">ideation</span> to <span class="bold">user research</span> to <span class="bold">prototyping</span> an iOS and webapp tool that relies on existing friend and family networks to promote mental health.</p>
+				<p>other projects I worked on with DFA include a modified clicker system which better gauges student understanding in the classroom, and a tool to help teachers collaborate more effectively.</p>
+				</div>
+		  	</div>
+		</div>
+		<div id="edModal" class="modal">
+		  	<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="info">
+					<img class="logo" src="images/edx.png" />
+					 is a MOOC - Massive Open Online Course - Platform started by MIT and Harvard to make college education from top universities such as MIT, Harvard, and Berkeley <span class="bold">free and accessible</span> to all through video lectures and homework problems assigned and graded online. I worked in the research division, using data collected from edx users to identify patterns and analyze behavior.
+				</div>
+				<div class="info-text">
+					<p>previously the lab discovered a cheating phenomenon that only happens in MOOC environments which they coined CAMEO [Copying Answers Using Multiple Existences Online]. CAMEO involved students creating more than one account to attempt homework and exam problems, harvesting correct answers to input into their primary account.</p>
+					<p><span class="bold">as a researcher</span> in the lab, I worked on pursuing an interesting theory. A PhD student in the lab discovered that although most CAMEO users scored high on CAMEO-able questions and low on non-CAMEO-able questions, the highest scoring users on both parameters were also CAMEO users. This led to the question: <span class="bold"> do certain approaches to "cheating" in online learning environments lead to higher learning gains?</span></p>
+					<p>thus began my many weeks of <span class="bold">data analysis</span>, using Google Bigquery, STATA and Gephi to visualize and identify patterns in student habits and their associated content mastery levels.</p>
+				</div>
+			</div>
+		</div>
+		<div id="roomModal" class="modal">
+		  	<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="info">
+					<img class="logo" id="room-logo" src="images/1room.png" />
+					 is the parent social benefit organization for 1Room. 1Room [formally known as RARE: Radically Affordable Rural-Engineered Education] aims to make education more <span class="bold">accessible</span>, <span class="bold">affordable</span>, and <span class="bold">effective</span> in developing countries. Our pilot sites include Mbeya Tanzania and Kisumu Kenya.
+				</div>
+				<div class="info-text">
+					<p>we partnered with FLE [Foundation for Learning Equality], OLE [Open Learning Exchange], MIT TATA Center, MIT Ideas Global Challenge, and Rotary International, to host resources such as Khan Academy and Wikipedia on raspberry pis to allow rural locations with <span class="bold">no internet or power</span> to access the multitude of available resources available here. 1room hopes to be a cheap alternative to government schools that creates effective learning hubs for underserved populations in developing countries. Underserved populations include adult learners, the poor, and populations residing in rural areas. <span class="bold">as chief technology officer</span> I led a small team of engineers at MIT to develop both hardware and software used at our pilot sites. </p>
+				</div>
+		  </div>
+		</div>
+		<div id="medModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="info">
+					<img class="logo" src="images/hm.png" />
+					 is an MIT organization that aims to <span class="bold">disrupt healthcare</span> by bringing together professionals such as doctors, engineers, developers, designers, and entrepreneurs to work on addressing gaps within this complex system.
+				</div>
+				<div class="info-text">
+					<p> <span class="bold">as an organizer</span> I orchestrated the Undergrad Hack [2014] which had representation from over 20 different colleges, and the Rehabilitation Hack [2015] where we partnered with Spaulding Hospital to plan and execute a hackathon at the Cambridge Innovation Center. I additionally contributed to the planning and execution of numerous other healthcare hackathons hosted by MIT Hacking Medicine. </p>
+					<p> <span class="bold">as a participant</span> I formed a team with physicians at Children's during the Pediatric Hack [2014] to develop the idea and design for Genetiscripts. Genetiscripts uses patient genomic data to enhance EMRs and help prevent misdiagnoses. </p>
+				</div>
+			</div>
+		</div>
+		<!-- Bottom banner -->
+		<div class="bottom-banner">
+			<ul class="my-links">
+				<li><a href="mailto:ruthpark@mit.edu"><img class="icon" src="images/email.png" /></a></li>
+				<li><a href="https://github.com/ruthpark"><img class="icon" src="images/git.png" /></a></li>
+				<li><a href="https://www.linkedin.com/in/ruth-park"></i><img class="icon" src="images/linked.png" /></a></li>
+				<li><a href="images/Resume.pdf"></i><img class="icon" src="images/resume-icon.png" /></a></li>
+			</ul>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

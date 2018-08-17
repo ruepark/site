@@ -1,0 +1,405 @@
+/*----------General---------------------------------------------------------------------*/
+body {
+	font: 100 1em/1.5em 'Lato';
+	margin: 0;
+	height: 100%;
+	text-align: center;
+}
+
+.bold {
+	font-weight: 300;
+	color: #3D3D3D;
+}
+
+li {
+	display: inline;
+}
+
+li a {
+	display: inline-block;
+	color: gray;
+	text-align: center;
+	padding: .5em;
+	text-decoration: none;
+	font: 100 1em/1.5em 'Lato';
+}
+
+li a:hover {
+	color: rgba(44, 168, 236, 1);
+	text-decoration: none;
+	font: 300 1em/1.5em 'Lato';
+	opacity: 1;
+}
+
+.main {
+	margin-bottom: 6em; /* height of the bottom-banner */
+}
+
+/*Navbar*/
+.title {
+    font: 300 2.5em/1.5em 'Lato';
+}
+
+#sprout {
+	height: .8em;
+	margin-bottom: -.1em;
+	padding-right: .2em;
+}
+
+h1 {
+	margin: 1em 0 0 0;
+	font: 100 2em/1.5em 'Lato';
+}
+
+.table {
+	display: table;
+	margin: 0 auto;
+	padding-bottom: 1em;
+}
+
+.my-navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	position: relative;
+}
+
+.my-navbar:after, .my-navbar:before { /* The lines on the nav bar */
+	display: inline-block;
+	content: "";
+	height: .05em;
+	background: #d9d9d9;
+	width: 150%;
+	position: absolute;
+	top: 60%;
+}
+
+.my-navbar:after {
+	margin-left: 58%;
+}
+
+
+.my-navbar:before {
+	margin-left: -158%;
+}
+
+/*Bottom Banner*/
+.bottom-banner {
+	background: rgba(0, 0, 0, .08);
+	width: 100%;
+	height: 6em;
+	position: fixed;
+	bottom:0;
+}
+
+.icon {
+	height: 3em;
+	width: auto;
+	border-radius: 50%;
+}
+
+.circle {
+	border-radius: 50%;
+	height:3em;
+}
+
+.icon:hover {
+	background-color: #2CA8EC;
+	position: relative;
+	opacity:.7;
+}
+
+ul.my-links li a {
+	display: inline-block;
+	padding-top: 1em;
+	padding-right: .1em;
+	padding-left: .1em;
+	text-decoration: none;
+}
+
+.my-links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	position: relative;
+	float: right;
+	margin-right: 12%;
+}
+
+
+
+/*----------Project Page------------------------------------------------------------------*/
+/*Project boxes*/
+#dfaBtn {
+	background-color: orange;
+}
+
+#roomBtn {
+	background-color: #BCED00;
+}
+
+#medBtn {
+	background-color: #16A085;
+}
+
+#edx {
+	position:absolute; 
+	bottom: 0; 
+	right: 0;
+	padding: .5em;
+}
+
+#dfa, #dfa2 {
+	position:absolute; 
+	bottom: 0; 
+	left: 0;
+	padding: .5em;
+}
+
+#dfa {
+	color: white;
+    font: 300 2.5em/1.5em 'Lato';
+    z-index: 1;
+}
+
+#dfa2, #room2, #hm2 {
+	z-index:1;
+}
+
+#room, #room2 {
+	position:absolute; 
+	top: 0; 
+	right: 0;
+	padding: .5em;
+}
+
+#room {
+	color: white;
+    font: 300 2.5em/1.5em 'Lato';
+    z-index: 1;
+}
+
+#hm, #hm2 {
+	position:absolute; 
+	top: 0; 
+	left: 0;
+	padding: .5em;
+}
+
+#hm {
+	color: white;
+    font: 300 2.5em/1.5em 'Lato';
+    z-index: 1;
+}
+
+.overlay, .overlay2 { 
+	z-index: 1; 
+	width: 100%; 
+	height: 100%; 
+	background-color: black;
+    vertical-align: bottom;
+    line-height: 15em;
+    color: white;
+    font: 300 2.5em/1.5em 'Lato';
+    position: relative; 
+    top: 0;
+}
+
+.overlay {
+	opacity: 0;
+}
+
+.overlay2 {
+	opacity: 1;
+}
+
+.overlay:hover, .overlay2:hover { 
+	opacity: .5;
+}
+
+.image-link, .image-inside {
+    height: 16em;
+    width: 16em;
+}
+
+.image-link {
+    margin: .2em;
+    display: inline-block;
+    position: relative;
+}
+
+.image-inside {
+    z-index: 0;
+	position: absolute; 
+	top: 0; 
+	left: 0;
+}
+
+.container-for-projects {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*Modals*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px 20px 40px 20px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    z-index: 100;
+    position: absolute;
+    border-radius: .5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #707070;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Content inside Modal */
+.logo {
+	float: left;
+	height: 5em;
+	margin-top: -1em;
+	padding-right: .5em;
+	margin-left: -.5em;
+}
+
+#room-logo {
+	margin-top: -1.5em;
+	height: 5.8em;
+}
+
+.info, .info-text {
+	font: 100 1em/1.5em 'Lato';
+	text-align: left;
+	padding-left: .5em;
+}
+
+.info {
+	width: 100%;
+	height: 100%;
+	margin-top: 2.5em;
+}
+
+
+
+/*----------Interest Page------------------------------------------------------------------*/
+#ed, #design, #climbing,#photography,#singing,#humans {
+	display: none;
+}
+
+.container {
+	width:25em;
+	display: inline-block;
+	margin-bottom: 1em;
+}
+
+.heart {
+	color: #B82601;
+	font-size: .75em;
+}
+
+/*Crystal Shape*/
+#crystal-bucket {
+	position: relative;
+	width: 22em;
+	display: inline-block;
+}
+
+#crystal {
+	width: 100%;
+	position: relative;
+}
+
+#customshape1, #customshape2, #customshape3, #customshape4, #customshape5, #customshape6 {
+	width: 13em;
+	height: 13em;
+	background: #000000;
+	opacity: 0;
+	position: absolute;
+	z-index: 1;
+}
+
+#customshape1 {
+	-webkit-clip-path: polygon(4% 4%, 82% 2%, 87% 85%, 0 71%);
+	clip-path: polygon(4% 4%, 82% 2%, 87% 85%, 0 71%);
+	top: 0em; left: 1.1em;
+}
+
+#customshape2 {
+	-webkit-clip-path: polygon(36.5% 8.5%, 66% 5.5%, 78% 40.5%, 37% 85.5%);
+	clip-path: polygon(36.5% 8.5%, 66% 5.5%, 78% 40.5%, 37% 85.5%);
+	top: 0em; right: 1.1em;
+}
+
+#customshape3 {
+	-webkit-clip-path: polygon(71% 37.5%, 99.5% 59.5%, 66.5% 80%, 29% 76%);
+	clip-path: polygon(71% 37.5%, 99.5% 59.5%, 66.5% 80%, 29% 76%);
+	top: 1.5em; right: 0em;
+}
+
+#customshape4 {
+	-webkit-clip-path: polygon(92.5% 59.5%, 95.5% 97%, 62.2% 83%, 59.5% 52%);
+	clip-path: polygon(92.5% 59.5%, 95.5% 97%, 62.2% 83%, 59.5% 52%);
+	bottom: 1em; right: 4em;
+}
+
+#customshape5 {
+	-webkit-clip-path: polygon(20% 70.8%, 64% 43.5%, 68% 75%, 31.5% 98.5%);
+	clip-path: polygon(20% 70.8%, 64% 43.5%, 68% 75%, 31.5% 98.5%);
+	bottom: 0em; right: 5em;
+}
+
+#customshape6 {
+	-webkit-clip-path: polygon(9% 49.5%, 95% 57%, 46% 84%, 2% 58.5%);
+	clip-path: polygon(9% 49.5%, 95% 57%, 46% 84%, 2% 58.5%);
+	bottom: 2em; left: 0em;
+}
+
+#customshape1:hover, #customshape2:hover, #customshape3:hover, #customshape4:hover, #customshape5:hover, #customshape6:hover {
+	opacity: .5;
+}
+
+
+
+/*----------About Page-------------------------------------------------------------------*/
+#aboutme {
+	width: 60%;
+}
+
